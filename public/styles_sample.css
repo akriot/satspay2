@@ -1,0 +1,187 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://bdhsdsjadjcunqriaaef.supabase.co/storage/v1/object/public/album_arts/bg.png");
+  background-size: cover;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+  border-radius: 7px;
+  width: 250px;
+  height: 250px;
+}
+
+.lightning-link a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #444;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.sort-options button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.sort-options button:hover {
+  background-color: #777;
+}
+
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.album {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+}
+
+.album:hover {
+  transform: scale(1.05);
+}
+
+.album .add-to-cart {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.album .add-to-cart:hover {
+  background-color: #777;
+}
+
+.checkout-card {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  max-width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.checkout-card p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.checkout-card button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.checkout-card button:hover {
+  background-color: #2980b9;
+}
+
+/* Modal styles */
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 80%;
+  max-width: 500px;
+  color: #fff;
+  text-align: center;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.custom-modal img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.custom-modal h3 {
+  margin-top: 1rem;
+}
+
+.custom-modal .track-list {
+  margin-top: 1rem;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.custom-modal .track-list li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.custom-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+#added-items-list {
+  text-align: left;
+  margin-top: 1rem;
+  color: #000;
+}
