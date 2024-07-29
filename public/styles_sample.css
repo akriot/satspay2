@@ -1,7 +1,7 @@
 /* Basic styling */
 body {
   font-family: Arial, sans-serif;
-  background-image: url("https://bdhsdsjadjcunqriaaef.supabase.co/storage/v1/object/public/album_arts/bg.png");
+  background-image: url("./album_images/bg.png");
   background-size: cover;
   color: #fff;
 }
